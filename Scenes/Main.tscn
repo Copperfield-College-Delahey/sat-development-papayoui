@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://biwdh356ls1sn"]
+
+[ext_resource type="Texture2D" uid="uid://chg1inctvt08t" path="res://icon.svg" id="1_i7lsi"]
+[ext_resource type="PackedScene" uid="uid://bo4b2kt5gkqcq" path="res://Scenes/Plant.tscn" id="2_cg7ke"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(578, 318)
+scale = Vector2(8.98438, 5.0625)
+texture = ExtResource("1_i7lsi")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 145.0
+offset_top = 119.0
+offset_right = 281.0
+offset_bottom = 255.0
+icon = ExtResource("1_i7lsi")
+
+[node name="draggable" parent="." instance=ExtResource("2_cg7ke")]
+position = Vector2(669, 169)
